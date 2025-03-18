@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="SAMJSCHOOLS.CSS" rel="stylesheet"  type="text/css"/>
+    <style>
+        body{
+            background-image: url(tata-car.jpg);
+           background-repeat: no-repeat;
+           background-attachment: fixed ;
+            background-size: 100%,100%;
+            background-color: coral;
+            
+        }
+    table{
+        background-color: #fb44da;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGE COMPUTATION</title>
+    <script lang="javascript">
+        
+        var currentYear=new
+        Date().getFullYear();// GET THE CURRENT YEAR FROM THE SYSTEM
+        var YOB=parseInt(prompt("Enter you year of birth(YOB): "));
+        var days=(currentYear- YOB)*365.25;
+        var hours=days*24;
+        var mins=hours*60;
+
+        function AgeCalculator()
+        {
+            {
+           
+            document.writeln("Your Age is: "+ SAMJ(currentYear,YOB)+" years"+"<p>");
+            document.writeln("you are "+days+" days old"+"<p>");
+            document.writeln("you are "+hours+" hours old"+"<p>");
+            document.writeln("you are "+mins+" minutes old"+"<p>");
+
+        }
+        
+            function SAMJ(currentYear,YOB)
+            {
+                return currentYear- YOB;
+            }
+        }
+    </script>
+</head>
+<body onload="AgeCalculator()">
+    WELCOME
+</body>
+</html>
