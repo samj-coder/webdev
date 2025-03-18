@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+    <title>Tax Computation Program</title>
+</head>
+<body>
+    Basic Salary <br/>
+    <script type="text/javascript">
+        var No_Hours=parseFloat(prompt("Enter the number of hours worked: "));
+        var Hourly_rate=parseFloat(prompt("Enter the hourly rate: "));
+        var basicSalary = No_Hours *  Hourly_rate;
+        let lunchAllowance= 200;
+        let Gross_pay=basicSalary + lunchAllowance;
+        var Income_tax= 30/100 * Gross_pay;
+        Net_pay= (Gross_pay - Income_tax).toFixed(2);
+        document.writeln("Worked Hours: "+ No_Hours + "<p>");
+        document.writeln("Hourly pay: "+ Hourly_rate)+ "<p>";
+        document.writeln("Basic Salary: "+basicSalary.toFixed(2)+ "<p>");
+        document.writeln("Gross Pay: "+ Gross_pay.toFixed(2)+ "<p>");
+            document.writeln("Tax: "+ Income_tax.toFixed(2)+ "<p>");
+        document.writeln("Salary: "+ Net_pay+ "<p>");
+    </script>
+</body>
+</html>
